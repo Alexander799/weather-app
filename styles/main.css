@@ -1,0 +1,20 @@
+body {
+    background: #619eff;
+    color: #ffffff;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+footer span,
+a {
+    display: inline-block;
+    margin: 20px;
+    font-size: 25px;
+    color: #ffffff;
+}
