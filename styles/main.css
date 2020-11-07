@@ -1,6 +1,23 @@
-body {
-    background: #619eff;
+section {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(#619eff, #ffffff);
     color: #ffffff;
+}
+
+.container {
+    width: 300px;
+    height: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    background: radial-gradient(#619eff, #ffffff);
 }
 
 footer {
@@ -16,5 +33,5 @@ a {
     display: inline-block;
     margin: 20px;
     font-size: 25px;
-    color: #ffffff;
+    color: #619eff;
 }
