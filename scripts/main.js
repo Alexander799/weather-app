@@ -1,21 +1,12 @@
-//1051f6ef13238541521ff75635f44f34
-//api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=1051f6ef13238541521ff75635f44f34
-//
-function success(pos) {
-    let crd = pos.coords;
-    const apiKey = `1051f6ef13238541521ff75635f44f34`;
-    fetch(`api.openweathermap.org/data/2.5/weather?lat=${crd.latitude}&lon=${crd.longitude}&appid=${apiKey}`)
-        .then(response => { return response.json() })
-        .then(data => { console.log(data) })
-        .catch(err => { console.log(err) })
+/*let btn = document.getElementById('btn');
 
+let cityName;
+btn.onclick = () => {
+    return cityName = document.getElementById('city-input');
 };
-
-navigator.geolocation.getCurrentPosition(success);
-
-/*const cityName = `Kharkiv,ua`,
-    apiKey = `1051f6ef13238541521ff75635f44f34`;
-fetch(`api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=${apiKey}`)
+console.log(cityName.value);*/
+let cityName = `Kyiv`;
+fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=1051f6ef13238541521ff75635f44f34`)
     .then(response => { return response.json() })
     .then(data => { console.log(data) })
-    .catch(err => { console.log(err) })*/
+    .catch(err => { console.log(err) })
