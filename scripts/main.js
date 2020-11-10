@@ -7,7 +7,7 @@ btn.onclick = () => {
 console.log(cityName.value);*/
 //https://openweathermap.org/img/wn/.png
 let cityName = `Kramatorsk`;
-fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=1051f6ef13238541521ff75635f44f34`)
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=1051f6ef13238541521ff75635f44f34`)
     .then(response => { return response.json() })
     .then(data => {
         document.getElementById('city').textContent = data.name;
