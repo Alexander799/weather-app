@@ -27,7 +27,13 @@ function operation(bool) {
                         document.getElementById('direction').innerHTML = direction(data.wind.deg);
                         document.getElementById('speed').textContent = `${data.wind.speed} m/s`;
                     })
-                    .catch(err => { console.log(err) })
+                    .catch(err => {
+                        while (document.getElementsByClassName('weather-block')[0].firstChild) {
+                            document.getElementsByClassName('weather-block')[0].firstChild.remove();
+                        }
+                        document.getElementsByClassName('weather-block')[0].textContent = `Error! Sorry, your city was not found. Check your input.`;
+                        console.log(err)
+                    })
                 USERINPUT.value = "";
                 document.getElementsByClassName('weather-block')[0].style.display = 'flex';
             }
