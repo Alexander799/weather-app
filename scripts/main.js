@@ -31,7 +31,7 @@ function operation(bool) {
                         while (document.getElementsByClassName('weather-block')[0].firstChild) {
                             document.getElementsByClassName('weather-block')[0].firstChild.remove();
                         }
-                        document.getElementsByClassName('weather-block')[0].textContent = `Error! Sorry, your city was not found. Check your input.`;
+                        document.getElementsByClassName('weather-block')[0].textContent = `Error! Sorry, your city was not found. Check your input, reload the page and try again.`;
                         console.log(err)
                     })
                 USERINPUT.value = "";
